@@ -1,0 +1,1 @@
+fnc_Vehicles_Create = compile preprocessFileLineNumbers "vehicles\functions\fnc_Vehicles_Create.sqf"; 

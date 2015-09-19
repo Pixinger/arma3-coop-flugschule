@@ -1,0 +1,14 @@
+private["_task"];
+_task = _this select 0;
+
+private["_state"];
+_state = taskState _task;
+
+while { taskState _task == _state } do
+{
+	private["_smoke"];
+	_smoke = "SmokeShellGreen" createVehicle (_this select 1);
+	Sleep 30;
+};
+
+player sidechat "smoke done";

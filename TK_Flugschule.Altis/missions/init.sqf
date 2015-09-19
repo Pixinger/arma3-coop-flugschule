@@ -1,0 +1,1 @@
+missionsStopAll = 0; // Wird inkrementiert
