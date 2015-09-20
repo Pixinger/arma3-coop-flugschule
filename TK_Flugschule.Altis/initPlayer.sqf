@@ -1,12 +1,19 @@
-if (hasInterface) then
-{
-	waitUntil { !isNull player };
-	waituntil {!(IsNull (findDisplay 46))};
+waitUntil { alive player };
 
-	player addAction ["Fluggerät wählen","vehicles\showDialog.sqf", nil, 0, true, true, "", "vehicle player == player"];
-	player addAction ["Mission: Pickup","missions\evac\run.sqf", nil, 0, true, true, "", "vehicle player != player"];
+player sidechat "respawned";
 
-	//unit: Object - Object the event handler is assigned to
-	//corpse: Object - Object the event handler was assigned to, aka the corpse/unit player was previously controlling	
-	//player addEventHandler ["respawn", { deleteVehicle (_this select 1); [] execVM "initPlayer.sqf"}]	
-};
+player addAction ["Fluggerät wählen - BLU","vehicles\showDialogBLU.sqf", nil, 0, true, true, "", "vehicle player == player"];
+player addAction ["Fluggerät wählen - OPF","vehicles\showDialogOPF.sqf", nil, 0, true, true, "", "vehicle player == player"];
+player addAction ["Fluggerät wählen - IND","vehicles\showDialogIND.sqf", nil, 0, true, true, "", "vehicle player == player"];
+player addAction ["Mission: Pickup","missions\evac\run.sqf", nil, 0, true, true, "", "vehicle player != player"];
+
+/* Aktuelle Ausrüstung löschen */
+//removeAllAssignedItems player;
+removeAllPrimaryWeaponItems player;
+removeAllHandgunItems player;
+removeAllWeapons player;
+//removeBackpack player;
+//removeHeadgear player;
+//removeVest player;
+//removeUniform player;
+//removeGoggles player;

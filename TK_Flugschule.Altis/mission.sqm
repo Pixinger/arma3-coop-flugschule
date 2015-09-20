@@ -7,7 +7,8 @@ class Mission
 		"A3_Characters_F_BLUFOR",
 		"a3_characters_f",
 		"A3_Structures_F_Mil_Helipads",
-		"A3_Structures_F_Bootcamp_Items_Electronics"
+		"A3_Structures_F_Bootcamp_Items_Electronics",
+		"a3_weapons_f"
 	};
 	addOnsAuto[]=
 	{
@@ -15,12 +16,13 @@ class Mission
 		"a3_characters_f",
 		"A3_Structures_F_Mil_Helipads",
 		"A3_Structures_F_Bootcamp_Items_Electronics",
+		"A3_Weapons_F",
 		"a3_map_altis"
 	};
 	randomSeed=11805029;
 	class Intel
 	{
-		briefingName="[TK]Flugschule v1.2";
+		briefingName="[TK]Flugschule v1.5";
 		overviewText="Fliegen lernen leicht gemacht";
 		startWeather=0.29999998;
 		startWind=0.099999994;
@@ -233,7 +235,7 @@ class Mission
 	};
 	class Vehicles
 	{
-		items=35;
+		items=43;
 		class Item0
 		{
 			position[]={14151.855,20.477863,16197.604};
@@ -548,16 +550,89 @@ class Mission
 			vehicle="Land_VRGoggles_01_F";
 			skill=0.60000002;
 		};
+		class Item35
+		{
+			position[]={23180.051,3.1900001,18896.758};
+			id=45;
+			side="EMPTY";
+			vehicle="Land_VRGoggles_01_F";
+			skill=0.60000002;
+		};
+		class Item36
+		{
+			position[]={12166.439,11.681039,13961.34};
+			id=46;
+			side="EMPTY";
+			vehicle="Land_VRGoggles_01_F";
+			skill=0.60000002;
+		};
+		class Item37
+		{
+			position[]={5077.4541,31.190001,10783.262};
+			id=47;
+			side="EMPTY";
+			vehicle="Land_VRGoggles_01_F";
+			skill=0.60000002;
+		};
+		class Item38
+		{
+			position[]={3184.5298,2,12906.372};
+			id=48;
+			side="EMPTY";
+			vehicle="Land_VRGoggles_01_F";
+			skill=0.60000002;
+		};
+		class Item39
+		{
+			position[]={3118.8279,2.1388879,12497.23};
+			id=49;
+			side="EMPTY";
+			vehicle="Land_VRGoggles_01_F";
+			skill=0.60000002;
+		};
+		class Item40
+		{
+			position[]={3491.5413,19.49683,14146.08};
+			id=50;
+			side="EMPTY";
+			vehicle="Land_VRGoggles_01_F";
+			skill=0.60000002;
+		};
+		class Item41
+		{
+			position[]={23649.15,5.23,16373.944};
+			id=51;
+			side="EMPTY";
+			vehicle="Land_VRGoggles_01_F";
+			skill=0.60000002;
+		};
+		class Item42
+		{
+			position[]={23606.924,3.1900001,18332.975};
+			id=52;
+			side="EMPTY";
+			vehicle="LaserTargetW";
+			skill=0.60000002;
+			description="LaserZiel";
+		};
 	};
 	class Markers
 	{
-		items=1;
+		items=2;
 		class Item0
 		{
 			position[]={14183.438,19.59,16273.384};
 			name="respawn_west";
 			type="Empty";
 			angle=-130.69164;
+		};
+		class Item1
+		{
+			position[]={23607.314,3.1900001,18333.338};
+			name="LaserTargetMarker1";
+			text="Lasertarget";
+			type="mil_objective";
+			colorName="ColorRed";
 		};
 	};
 };

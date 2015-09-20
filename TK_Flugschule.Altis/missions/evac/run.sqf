@@ -16,7 +16,7 @@ while { !_found } do
 	private["_alpha"];
 	_alpha = random 360; //DEG
 	private["_offsetX","_offsetY"];
-	_offsetX = 4500 + (random 1000);
+	_offsetX = 3500 + (random 1000);
 	_offsetY = 0;
 	private["_px","_py"];
 	_px = _offsetX * cos(_alpha) - _offsetY * sin(_alpha);
@@ -46,10 +46,10 @@ player setCurrentTask _currentTask;
 [_currentTask, _position] execVM "missions\evac\smoke.sqf";
 
 // Warten bis angekommen
-while { (_missionStopValue == missionsStopAll) && ((vehicle player) distance2D _position > 2000) } do { Sleep 2; };
+while { (_missionStopValue == missionsStopAll) && ((vehicle player) distance2D _position > 2000) } do { uiSleep 2; };
 if (_missionStopValue != missionsStopAll) exitWith { _currentTask setTaskState "Failed"; };
 
-while { (_missionStopValue == missionsStopAll) && (((getPosATL player) select 2 > 2) || ((player) distance2D _position > 100)) } do { Sleep 5; };
+while { (_missionStopValue == missionsStopAll) && (((getPosATL player) select 2 > 2) || ((player) distance2D _position > 100)) } do { uiSleep 5; };
 if (_missionStopValue != missionsStopAll) exitWith { _currentTask setTaskState "Failed"; };
 
 _currentTask setTaskState "Succeeded";
@@ -62,7 +62,7 @@ _targets = entities "Land_VRGoggles_01_F";
 private["_targetIndex"];
 _targetIndex = floor(random (count _targets));
 _position = (getPos (_targets select _targetIndex));
-while { _position distance (getPos player) > 8000 } do
+while { _position distance (getPos player) > 7000 } do
 {
 	_targetIndex = floor(random (count _targets));
 	_position = (getPos (_targets select _targetIndex));
@@ -80,7 +80,7 @@ player setCurrentTask _currentTask;
 [_currentTask, _position] execVM "missions\evac\smoke.sqf";
 
 // Warten bis angekommen
-while { (_missionStopValue == missionsStopAll) && (((getPosATL player) select 2 > 2) || ((player) distance2D _position > 100)) } do { Sleep 5; };
+while { (_missionStopValue == missionsStopAll) && (((getPosATL player) select 2 > 2) || ((player) distance2D _position > 100)) } do { uiSleep 5; };
 if (_missionStopValue != missionsStopAll) exitWith { _currentTask setTaskState "Failed"; };
 player sidechat "Mission beendet";
 
