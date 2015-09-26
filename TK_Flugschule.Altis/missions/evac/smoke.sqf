@@ -10,5 +10,3 @@ while { taskState _task == _state } do
 	_smoke = "SmokeShellGreen" createVehicle (_this select 1);
 	uiSleep 30;
 };
-
-player sidechat "smoke done";

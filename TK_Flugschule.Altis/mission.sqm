@@ -16,13 +16,12 @@ class Mission
 		"a3_characters_f",
 		"A3_Structures_F_Mil_Helipads",
 		"A3_Structures_F_Bootcamp_Items_Electronics",
-		"A3_Weapons_F",
 		"a3_map_altis"
 	};
 	randomSeed=11805029;
 	class Intel
 	{
-		briefingName="[TK]Flugschule v1.5";
+		briefingName="[TK]Flugschule v1.6";
 		overviewText="Fliegen lernen leicht gemacht";
 		startWeather=0.29999998;
 		startWind=0.099999994;
@@ -235,10 +234,10 @@ class Mission
 	};
 	class Vehicles
 	{
-		items=43;
+		items=42;
 		class Item0
 		{
-			position[]={14151.855,20.477863,16197.604};
+			position[]={14154.402,20.488565,16196.626};
 			azimut=110;
 			id=10;
 			side="EMPTY";
@@ -248,7 +247,7 @@ class Mission
 		};
 		class Item1
 		{
-			position[]={14242.068,19.416773,16287.903};
+			position[]={14243.44,19.42556,16286.334};
 			azimut=140;
 			id=11;
 			side="EMPTY";
@@ -258,7 +257,7 @@ class Mission
 		};
 		class Item2
 		{
-			position[]={14262.858,19.363071,16302.695};
+			position[]={14263.838,19.365685,16300.736};
 			azimut=153;
 			id=12;
 			side="EMPTY";
@@ -268,7 +267,7 @@ class Mission
 		};
 		class Item3
 		{
-			position[]={14345.989,18.638992,16333.964};
+			position[]={14345.597,18.65731,16330.631};
 			azimut=185;
 			id=13;
 			side="EMPTY";
@@ -278,7 +277,7 @@ class Mission
 		};
 		class Item4
 		{
-			position[]={14407.014,19.3029,16318.792};
+			position[]={14406.034,19.286699,16315.655};
 			azimut=205;
 			id=14;
 			side="EMPTY";
@@ -288,7 +287,7 @@ class Mission
 		};
 		class Item5
 		{
-			position[]={14414.431,18.728809,16238.961};
+			position[]={14416.192,18.723064,16241.508};
 			azimut=43;
 			id=15;
 			side="EMPTY";
@@ -298,7 +297,7 @@ class Mission
 		};
 		class Item6
 		{
-			position[]={14256.2,20.248098,16219.204};
+			position[]={14254.043,20.241571,16220.379};
 			azimut=305;
 			id=16;
 			side="EMPTY";
@@ -308,7 +307,7 @@ class Mission
 		};
 		class Item7
 		{
-			position[]={14284.581,18.564232,16351.384};
+			position[]={14285.562,18.666492,16349.031};
 			azimut=175;
 			id=17;
 			side="EMPTY";
@@ -318,7 +317,7 @@ class Mission
 		};
 		class Item8
 		{
-			position[]={15056.235,17.91,17075.15};
+			position[]={15060.397,17.91,17074.996};
 			azimut=90;
 			id=18;
 			side="EMPTY";
@@ -328,7 +327,7 @@ class Mission
 		};
 		class Item9
 		{
-			position[]={15075.719,17.91,17003.379};
+			position[]={15078.186,17.91,17004.611};
 			azimut=60;
 			id=19;
 			side="EMPTY";
@@ -338,7 +337,7 @@ class Mission
 		};
 		class Item10
 		{
-			position[]={15132.802,17.91,16983.01};
+			position[]={15131.261,17.91,16981.623};
 			azimut=225;
 			id=20;
 			side="EMPTY";
@@ -348,7 +347,7 @@ class Mission
 		};
 		class Item11
 		{
-			position[]={15077.361,17.91,17147.949};
+			position[]={15079.57,17.91,17147.064};
 			azimut=120;
 			id=21;
 			side="EMPTY";
@@ -358,7 +357,7 @@ class Mission
 		};
 		class Item12
 		{
-			position[]={15109.688,17.91,17213.299};
+			position[]={15112.118,17.91,17210.867};
 			azimut=130;
 			id=22;
 			side="EMPTY";
@@ -368,7 +367,7 @@ class Mission
 		};
 		class Item13
 		{
-			position[]={15129.676,17.91,17232.418};
+			position[]={15132.548,17.91,17231.754};
 			azimut=130;
 			id=23;
 			side="EMPTY";
@@ -606,33 +605,16 @@ class Mission
 			vehicle="Land_VRGoggles_01_F";
 			skill=0.60000002;
 		};
-		class Item42
-		{
-			position[]={23606.924,3.1900001,18332.975};
-			id=52;
-			side="EMPTY";
-			vehicle="LaserTargetW";
-			skill=0.60000002;
-			description="LaserZiel";
-		};
 	};
 	class Markers
 	{
-		items=2;
+		items=1;
 		class Item0
 		{
 			position[]={14183.438,19.59,16273.384};
 			name="respawn_west";
 			type="Empty";
 			angle=-130.69164;
-		};
-		class Item1
-		{
-			position[]={23607.314,3.1900001,18333.338};
-			name="LaserTargetMarker1";
-			text="Lasertarget";
-			type="mil_objective";
-			colorName="ColorRed";
 		};
 	};
 };
