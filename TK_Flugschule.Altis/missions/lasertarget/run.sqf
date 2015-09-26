@@ -86,7 +86,14 @@ uiSleep 5;
 _object allowDamage true;
 
 // Warten bis angekommen
-while { ((_missionStopValue == missionsStopAll) && (canmove _object)) } do { uiSleep 2; };
+while { ((_missionStopValue == missionsStopAll) && (canmove _object)) } do 
+{ 
+	_currentTask setSimpleTaskDestination (getPos _object); 
+
+	(vehicle player) setVehicleAmmoDef 1;
+
+	uiSleep 2; 
+};
 if (_missionStopValue != missionsStopAll) exitWith { _currentTask setTaskState "Failed"; };
 
 player sidechat "Ziel zerstört";

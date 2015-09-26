@@ -7,10 +7,15 @@
     projectile: Object - Object of the projectile that was shot (Arma 2: OA and onwards)
 */
 
-hint str(_this);
+//hint str(_this);
 
 private["_rockets"];
-_rockets = ["missiles_DAR",
+_rockets = [
+	"Missile_AGM_01_Plane_CAS_02_", "Rocket_03_HE_Plane_CAS_02_F","Rocket_03_AP_Plane_CAS_02_F","Bomb_03_Plane_CAS_02_F", // O_Plane_CAS_02_F
+	"missiles_SCALPEL", "rockets_Skyfire", // O_Heli_Attack_02_F
+	"missiles_DAGR", // O_Heli_Light_02_F
+	"GBU12BombLauncher", "missiles_Zephyr", 
+	"missiles_DAR",
 	"Rocket_04_HE_Plane_CAS_01_F","Rocket_04_AP_Plane_CAS_01_F",
 	"Missile_AGM_02_Plane_CAS_01_F", "Bomb_04_Plane_CAS_01_F"
 	];
@@ -37,6 +42,9 @@ if ((_this select 1) in _rockets) then
 	// Minusbereich korrigieren
 	if (_grad < 0) then {_grad = 360 + _grad;};
 	_grad = Round(_grad);
+	
+	_grad = Round(_grad / 30);
+	if (_grad == 0) then { _grad = 12; };
 
-	player sidechat format["Einschlag bei %1m / %2° aus %3m Entfernung", Round(_projectilePosStop distance (getPosASL missionTrackedObject)), _grad, Round(_projectilePosStart distance (getPosASL missionTrackedObject))];
+	player sidechat format["Einschlag bei %2Uhr %1m (Entfernung %3m)", Round(_projectilePosStop distance (getPosASL missionTrackedObject)), _grad, Round(_projectilePosStart distance (getPosASL missionTrackedObject))];
 };
