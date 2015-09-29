@@ -46,5 +46,6 @@ if ((_this select 1) in _rockets) then
 	_grad = Round(_grad / 30);
 	if (_grad == 0) then { _grad = 12; };
 
-	player sidechat format["Einschlag bei %2Uhr %1m (Entfernung %3m)", Round(_projectilePosStop distance (getPosASL missionTrackedObject)), _grad, Round(_projectilePosStart distance (getPosASL missionTrackedObject))];
+	//player sidechat format["Einschlag bei %2Uhr %1m (Entfernung %3m)", Round(_projectilePosStop distance (getPosASL missionTrackedObject)), _grad, Round(_projectilePosStart distance (getPosASL missionTrackedObject))];
+	player sidechat format["Einschlag bei %2Uhr %1m", Round(_projectilePosStop distance (getPosASL missionTrackedObject)), _grad];
 };

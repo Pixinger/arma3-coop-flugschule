@@ -46,10 +46,7 @@ player setCurrentTask _currentTask;
 [_currentTask, _position] execVM "missions\evac\smoke.sqf";
 
 // Warten bis angekommen
-while { (_missionStopValue == missionsStopAll) && ((vehicle player) distance2D _position > 2000) } do { uiSleep 2; };
-if (_missionStopValue != missionsStopAll) exitWith { _currentTask setTaskState "Failed"; };
-
-while { (_missionStopValue == missionsStopAll) && (((getPosATL player) select 2 > 2) || ((player) distance2D _position > 100)) } do { uiSleep 5; };
+while { (_missionStopValue == missionsStopAll) && (((getPosATL (vehicle player)) select 2 > 2) || ((vehicle player) distance2D _position > 100)) } do { uiSleep 5; };
 if (_missionStopValue != missionsStopAll) exitWith { _currentTask setTaskState "Failed"; };
 
 _currentTask setTaskState "Succeeded";

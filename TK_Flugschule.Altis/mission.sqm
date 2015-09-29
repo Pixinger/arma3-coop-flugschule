@@ -21,7 +21,7 @@ class Mission
 	randomSeed=11805029;
 	class Intel
 	{
-		briefingName="[TK]Flugschule v1.9";
+		briefingName="[TK]Flugschule v1.12";
 		overviewText="Fliegen lernen leicht gemacht";
 		startWeather=0.29999998;
 		startWind=0.099999994;
@@ -234,10 +234,10 @@ class Mission
 	};
 	class Vehicles
 	{
-		items=42;
+		items=40;
 		class Item0
 		{
-			position[]={14154.402,20.488565,16196.626};
+			position[]={14163.563,20.526457,16193.07};
 			azimut=110;
 			id=10;
 			side="EMPTY";
@@ -247,8 +247,8 @@ class Mission
 		};
 		class Item1
 		{
-			position[]={14243.44,19.42556,16286.334};
-			azimut=140;
+			position[]={14343.829,18.856323,16323.119};
+			azimut=185;
 			id=11;
 			side="EMPTY";
 			vehicle="Land_HelipadEmpty_F";
@@ -257,8 +257,8 @@ class Mission
 		};
 		class Item2
 		{
-			position[]={14263.838,19.365685,16300.736};
-			azimut=153;
+			position[]={14402.5,19.256618,16307.481};
+			azimut=205;
 			id=12;
 			side="EMPTY";
 			vehicle="Land_HelipadEmpty_F";
@@ -267,8 +267,8 @@ class Mission
 		};
 		class Item3
 		{
-			position[]={14345.597,18.65731,16330.631};
-			azimut=185;
+			position[]={14245.647,20.196161,16226.125};
+			azimut=305;
 			id=13;
 			side="EMPTY";
 			vehicle="Land_HelipadEmpty_F";
@@ -277,8 +277,8 @@ class Mission
 		};
 		class Item4
 		{
-			position[]={14406.034,19.286699,16315.655};
-			azimut=205;
+			position[]={14287.992,19.130308,16338.865};
+			azimut=175;
 			id=14;
 			side="EMPTY";
 			vehicle="Land_HelipadEmpty_F";
@@ -287,8 +287,8 @@ class Mission
 		};
 		class Item5
 		{
-			position[]={14416.192,18.723064,16241.508};
-			azimut=43;
+			position[]={15056.458,17.91,17075.189};
+			azimut=90;
 			id=15;
 			side="EMPTY";
 			vehicle="Land_HelipadEmpty_F";
@@ -297,8 +297,8 @@ class Mission
 		};
 		class Item6
 		{
-			position[]={14254.043,20.241571,16220.379};
-			azimut=305;
+			position[]={15077.793,17.91,17004.02};
+			azimut=60;
 			id=16;
 			side="EMPTY";
 			vehicle="Land_HelipadEmpty_F";
@@ -307,8 +307,8 @@ class Mission
 		};
 		class Item7
 		{
-			position[]={14285.562,18.666492,16349.031};
-			azimut=175;
+			position[]={15134.806,17.91,16985.365};
+			azimut=225.75479;
 			id=17;
 			side="EMPTY";
 			vehicle="Land_HelipadEmpty_F";
@@ -317,8 +317,8 @@ class Mission
 		};
 		class Item8
 		{
-			position[]={15060.397,17.91,17074.996};
-			azimut=90;
+			position[]={15117.349,17.91,17210.287};
+			azimut=135.45218;
 			id=18;
 			side="EMPTY";
 			vehicle="Land_HelipadEmpty_F";
@@ -327,8 +327,8 @@ class Mission
 		};
 		class Item9
 		{
-			position[]={15078.186,17.91,17004.611};
-			azimut=60;
+			position[]={14653.818,17.91,16686.803};
+			azimut=130;
 			id=19;
 			side="EMPTY";
 			vehicle="Land_HelipadEmpty_F";
@@ -337,8 +337,8 @@ class Mission
 		};
 		class Item10
 		{
-			position[]={15131.261,17.91,16981.623};
-			azimut=225;
+			position[]={14694.662,17.91,16729.688};
+			azimut=130;
 			id=20;
 			side="EMPTY";
 			vehicle="Land_HelipadEmpty_F";
@@ -347,8 +347,8 @@ class Mission
 		};
 		class Item11
 		{
-			position[]={15079.57,17.91,17147.064};
-			azimut=120;
+			position[]={14741.149,17.91,16778.25};
+			azimut=130;
 			id=21;
 			side="EMPTY";
 			vehicle="Land_HelipadEmpty_F";
@@ -357,57 +357,47 @@ class Mission
 		};
 		class Item12
 		{
-			position[]={15112.118,17.91,17210.867};
-			azimut=130;
+			position[]={12870.135,85.01371,16743.91};
 			id=22;
 			side="EMPTY";
-			vehicle="Land_HelipadEmpty_F";
-			leader=1;
+			vehicle="Land_VRGoggles_01_F";
 			skill=0.60000002;
 		};
 		class Item13
 		{
-			position[]={15132.548,17.91,17231.754};
-			azimut=130;
+			position[]={14744.063,17.91,16688.326};
 			id=23;
 			side="EMPTY";
-			vehicle="Land_HelipadEmpty_F";
-			leader=1;
+			vehicle="Land_VRGoggles_01_F";
 			skill=0.60000002;
 		};
 		class Item14
 		{
-			position[]={14638.857,17.91,16674.1};
-			azimut=130;
+			position[]={17552.781,13.034826,13242.777};
 			id=24;
 			side="EMPTY";
-			vehicle="Land_HelipadEmpty_F";
-			leader=1;
+			vehicle="Land_VRGoggles_01_F";
 			skill=0.60000002;
 		};
 		class Item15
 		{
-			position[]={14694.098,17.91,16731.1};
-			azimut=130;
+			position[]={20818.25,27.98312,7258.6924};
 			id=25;
 			side="EMPTY";
-			vehicle="Land_HelipadEmpty_F";
-			leader=1;
+			vehicle="Land_VRGoggles_01_F";
 			skill=0.60000002;
 		};
 		class Item16
 		{
-			position[]={14759.498,17.91,16797.166};
-			azimut=130;
+			position[]={26790.563,22.206255,24621.27};
 			id=26;
 			side="EMPTY";
-			vehicle="Land_HelipadEmpty_F";
-			leader=1;
+			vehicle="Land_VRGoggles_01_F";
 			skill=0.60000002;
 		};
 		class Item17
 		{
-			position[]={12870.135,85.01371,16743.91};
+			position[]={23495.926,90.481705,21138};
 			id=27;
 			side="EMPTY";
 			vehicle="Land_VRGoggles_01_F";
@@ -415,7 +405,7 @@ class Mission
 		};
 		class Item18
 		{
-			position[]={14744.063,17.91,16688.326};
+			position[]={11690.332,22.858137,11865.256};
 			id=28;
 			side="EMPTY";
 			vehicle="Land_VRGoggles_01_F";
@@ -423,7 +413,7 @@ class Mission
 		};
 		class Item19
 		{
-			position[]={17552.781,13.034826,13242.777};
+			position[]={3054.6445,52.334263,13152.616};
 			id=29;
 			side="EMPTY";
 			vehicle="Land_VRGoggles_01_F";
@@ -431,7 +421,7 @@ class Mission
 		};
 		class Item20
 		{
-			position[]={20818.25,27.98312,7258.6924};
+			position[]={5473.5308,27.299999,14994.807};
 			id=30;
 			side="EMPTY";
 			vehicle="Land_VRGoggles_01_F";
@@ -439,7 +429,7 @@ class Mission
 		};
 		class Item21
 		{
-			position[]={26790.563,22.206255,24621.27};
+			position[]={4960.8555,329.45294,21842.58};
 			id=31;
 			side="EMPTY";
 			vehicle="Land_VRGoggles_01_F";
@@ -447,7 +437,7 @@ class Mission
 		};
 		class Item22
 		{
-			position[]={23495.926,90.481705,21138};
+			position[]={9176.6504,14.965076,21611.604};
 			id=32;
 			side="EMPTY";
 			vehicle="Land_VRGoggles_01_F";
@@ -455,7 +445,7 @@ class Mission
 		};
 		class Item23
 		{
-			position[]={11690.332,22.858137,11865.256};
+			position[]={9735.2051,2.2014296,22310.129};
 			id=33;
 			side="EMPTY";
 			vehicle="Land_VRGoggles_01_F";
@@ -463,7 +453,7 @@ class Mission
 		};
 		class Item24
 		{
-			position[]={3054.6445,52.334263,13152.616};
+			position[]={14155.313,77.327209,21255.111};
 			id=34;
 			side="EMPTY";
 			vehicle="Land_VRGoggles_01_F";
@@ -471,7 +461,7 @@ class Mission
 		};
 		class Item25
 		{
-			position[]={5473.5308,27.299999,14994.807};
+			position[]={20699.195,35.599998,16607.33};
 			id=35;
 			side="EMPTY";
 			vehicle="Land_VRGoggles_01_F";
@@ -479,7 +469,7 @@ class Mission
 		};
 		class Item26
 		{
-			position[]={4960.8555,329.45294,21842.58};
+			position[]={26697.434,23.125849,23005.297};
 			id=36;
 			side="EMPTY";
 			vehicle="Land_VRGoggles_01_F";
@@ -487,7 +477,7 @@ class Mission
 		};
 		class Item27
 		{
-			position[]={9176.6504,14.965076,21611.604};
+			position[]={9744.3027,114,15872.946};
 			id=37;
 			side="EMPTY";
 			vehicle="Land_VRGoggles_01_F";
@@ -495,7 +485,7 @@ class Mission
 		};
 		class Item28
 		{
-			position[]={9735.2051,2.2014296,22310.129};
+			position[]={8595.1465,170.70589,18458.578};
 			id=38;
 			side="EMPTY";
 			vehicle="Land_VRGoggles_01_F";
@@ -503,7 +493,7 @@ class Mission
 		};
 		class Item29
 		{
-			position[]={14155.313,77.327209,21255.111};
+			position[]={3652.5791,7.023828,13390.551};
 			id=39;
 			side="EMPTY";
 			vehicle="Land_VRGoggles_01_F";
@@ -511,7 +501,7 @@ class Mission
 		};
 		class Item30
 		{
-			position[]={20699.195,35.599998,16607.33};
+			position[]={23180.051,3.1900001,18896.758};
 			id=40;
 			side="EMPTY";
 			vehicle="Land_VRGoggles_01_F";
@@ -519,7 +509,7 @@ class Mission
 		};
 		class Item31
 		{
-			position[]={26697.434,23.125849,23005.297};
+			position[]={12166.439,11.681039,13961.34};
 			id=41;
 			side="EMPTY";
 			vehicle="Land_VRGoggles_01_F";
@@ -527,7 +517,7 @@ class Mission
 		};
 		class Item32
 		{
-			position[]={9744.3027,114,15872.946};
+			position[]={5077.4541,31.190001,10783.262};
 			id=42;
 			side="EMPTY";
 			vehicle="Land_VRGoggles_01_F";
@@ -535,7 +525,7 @@ class Mission
 		};
 		class Item33
 		{
-			position[]={8595.1465,170.70589,18458.578};
+			position[]={3184.5298,2,12906.372};
 			id=43;
 			side="EMPTY";
 			vehicle="Land_VRGoggles_01_F";
@@ -543,7 +533,7 @@ class Mission
 		};
 		class Item34
 		{
-			position[]={3652.5791,7.023828,13390.551};
+			position[]={3118.8279,2.1388879,12497.23};
 			id=44;
 			side="EMPTY";
 			vehicle="Land_VRGoggles_01_F";
@@ -551,7 +541,7 @@ class Mission
 		};
 		class Item35
 		{
-			position[]={23180.051,3.1900001,18896.758};
+			position[]={3491.5413,19.49683,14146.08};
 			id=45;
 			side="EMPTY";
 			vehicle="Land_VRGoggles_01_F";
@@ -559,7 +549,7 @@ class Mission
 		};
 		class Item36
 		{
-			position[]={12166.439,11.681039,13961.34};
+			position[]={23649.15,5.23,16373.944};
 			id=46;
 			side="EMPTY";
 			vehicle="Land_VRGoggles_01_F";
@@ -567,42 +557,32 @@ class Mission
 		};
 		class Item37
 		{
-			position[]={5077.4541,31.190001,10783.262};
+			position[]={14613.169,17.91,16648.41};
+			azimut=130;
 			id=47;
 			side="EMPTY";
-			vehicle="Land_VRGoggles_01_F";
+			vehicle="Land_HelipadEmpty_F";
+			leader=1;
 			skill=0.60000002;
 		};
 		class Item38
 		{
-			position[]={3184.5298,2,12906.372};
+			position[]={14784.236,17.91,16821.172};
+			azimut=130;
 			id=48;
 			side="EMPTY";
-			vehicle="Land_VRGoggles_01_F";
+			vehicle="Land_HelipadEmpty_F";
+			leader=1;
 			skill=0.60000002;
 		};
 		class Item39
 		{
-			position[]={3118.8279,2.1388879,12497.23};
+			position[]={15161.95,17.91,17228.633};
+			azimut=224.73616;
 			id=49;
 			side="EMPTY";
-			vehicle="Land_VRGoggles_01_F";
-			skill=0.60000002;
-		};
-		class Item40
-		{
-			position[]={3491.5413,19.49683,14146.08};
-			id=50;
-			side="EMPTY";
-			vehicle="Land_VRGoggles_01_F";
-			skill=0.60000002;
-		};
-		class Item41
-		{
-			position[]={23649.15,5.23,16373.944};
-			id=51;
-			side="EMPTY";
-			vehicle="Land_VRGoggles_01_F";
+			vehicle="Land_HelipadEmpty_F";
+			leader=1;
 			skill=0.60000002;
 		};
 	};

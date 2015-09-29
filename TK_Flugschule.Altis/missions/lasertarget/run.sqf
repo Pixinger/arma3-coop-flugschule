@@ -2,6 +2,8 @@ missionsStopAll = missionsStopAll + 1;
 private["_missionStopValue"];
 _missionStopValue = missionsStopAll;
 
+private["_laserEnabled"];
+_laserEnabled = (_this select 3) select 0;
 
 // Bomben Tracker aktivieren
 private["_myPlane","_eventHandlerHandle"];
@@ -40,6 +42,7 @@ while { !_found } do
 		};		
 	};
 };
+_found = nil;
 
 private["_currentTask"];
 _currentTask = player createSimpleTask ["Zerstören"];
@@ -47,6 +50,7 @@ _currentTask setSimpleTaskDestination _position;
 _currentTask setTaskState "Assigned";
 player setCurrentTask _currentTask;
 
+// Fahrzeug erstellen
 private["_vehicles"];
 _vehicles = [
 	["O_APC_Tracked_02_cannon_F", 2],
@@ -56,7 +60,6 @@ _vehicles = [
 	["O_Truck_03_fuel_F", 0.5],
 	["O_APC_Wheeled_02_rcws_F", 2.3]
 	];
-	
 private["_index"];
 _index = floor(random(count _vehicles));
 
@@ -65,21 +68,35 @@ _object = ((_vehicles select _index) select 0) createVehicle _position;
 _object setPos _position;
 _object setDir (random 360);
 _object allowDamage false;
+_object setVehicleAmmo 0;
+_object setFuel 0;
 missionTrackedObject = _object; // Für externe Scripte wie dem Bomb-Tracker
 
-private["_bbr","_p1","_p2","_maxHeight"];
-_bbr = boundingBoxReal _object;;
-_p1 = _bbr select 0;
-_p2 = _bbr select 1;
-_maxHeight = abs ((_p2 select 2) - (_p1 select 2));
-_maxHeight = (_p2 select 2);
+// Crew erstellen
+createVehicleCrew _object;
+private["_crew"];
+_crew = crew _object;
 
-// LaserTargetWstatic
-//LaserTargetW
-//Sign_Sphere10cm_F
+// Laser erstellen, wenn gewünscht.
 private["_laser"];
-_laser = "LaserTargetW" createVehicle [(getpos _object) select 0, (getpos _object) select 1, 0];
-_laser attachto[_object, [0, 0, _maxHeight - ((_vehicles select _index) select 1)]];
+if (_laserEnabled) then
+{
+	// Boundingbox berechnen um den Laser sichtbar anzubringen.
+	private["_bbr","_p1","_p2","_maxHeight"];
+	_bbr = boundingBoxReal _object;;
+	_p1 = _bbr select 0;
+	_p2 = _bbr select 1;
+	_maxHeight = abs ((_p2 select 2) - (_p1 select 2));
+	_maxHeight = (_p2 select 2);
+
+	//LaserTargetWstatic
+	//LaserTargetW
+	//Sign_Sphere10cm_F
+	_laser = "LaserTargetW" createVehicle [(getpos _object) select 0, (getpos _object) select 1, 0];
+	_laser attachto[_object, [0, 0, _maxHeight - ((_vehicles select _index) select 1)]];
+};
+_index = nil;
+_vehicles = nil;
 
 // Warten bis sich alles gesetzt hat (JumpingVehicles).
 uiSleep 5;
@@ -101,10 +118,11 @@ player sidechat "Ziel zerstört";
 // Task beenden
 _currentTask setTaskState "Succeeded";
 // Laser löschen
-deleteVehicle _laser;
+if (_laserEnabled) then { deleteVehicle _laser; };
 // Bomben Tracker deaktivieren
 _myPlane removeEventHandler ["fired", _eventHandlerHandle];
-
+// Crea löschen
+{ _object deleteVehicleCrew _x;} foreach _crew;
 // Nach einiger Zeit das Fahrzeug löschen
 uiSleep 30;
 deleteVehicle _object;
