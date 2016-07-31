@@ -21,7 +21,7 @@ class Mission
 	randomSeed=11805029;
 	class Intel
 	{
-		briefingName="[TK]Flugschule v1.12";
+		briefingName="[TK]Flugschule v1.14";
 		overviewText="Fliegen lernen leicht gemacht";
 		startWeather=0.29999998;
 		startWind=0.099999994;

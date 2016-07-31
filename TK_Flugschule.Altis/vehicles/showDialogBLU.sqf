@@ -10,6 +10,7 @@ _buttons = [
 	["CH-67 Huron (Unarmed)", true, true, fnc_Vehicles_Create, ["B_Heli_Transport_03_unarmed_F"]],
 	["CH-67 Huron (Unarmed, Green)", true, true, fnc_Vehicles_Create, ["B_Heli_Transport_03_unarmed_green_F"]],
 	["CH-67 Huron", true, true, fnc_Vehicles_Create, ["B_Heli_Transport_03_F"]],
+	["VTOL", true, true, fnc_Vehicles_Create, ["B_T_VTOL_01_infantry_F"]],
 	["CH-67 Huron (Black)", true, true, fnc_Vehicles_Create, ["B_Heli_Transport_03_black_F"]],
 	["A-164 Wipeout (CAS)", true, true, fnc_Vehicles_Create, ["B_Plane_CAS_01_F"]]
 ];
