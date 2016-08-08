@@ -1,0 +1,1 @@
+admin_ConfigPlayerUIDs = ["_SP_PLAYER_","76561197990435624"];
