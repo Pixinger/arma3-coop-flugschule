@@ -7,6 +7,6 @@ _state = taskState _task;
 while { taskState _task == _state } do
 {
 	private["_smoke"];
-	_smoke = "SmokeShellGreen" createVehicle (_this select 1);
+	_smoke = "SmokeShellRed" createVehicle (_this select 1);
 	uiSleep 30;
 };

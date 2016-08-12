@@ -1,7 +1,11 @@
 waitUntil { alive player };
 
-player addAction ["Fluggerät wählen - BLU","vehicles\showDialogBLU.sqf", nil, -1, true, true, "", "vehicle player == player"];
-player addAction ["Fluggerät wählen - OPF","vehicles\showDialogOPF.sqf", nil, -1, true, true, "", "vehicle player == player"];
+player allowDamage false;
+
+player addAction ["Fluggerät wählen - BLU (Transport)","vehicles\showDialogBLU_Transport.sqf", nil, -1, true, true, "", "vehicle player == player"];
+player addAction ["Fluggerät wählen - BLU (Armed)","vehicles\showDialogBLU_Armed.sqf", nil, -1, true, true, "", "vehicle player == player"];
+player addAction ["Fluggerät wählen - OPF (Transport)","vehicles\showDialogOPF_Transport.sqf", nil, -1, true, true, "", "vehicle player == player"];
+player addAction ["Fluggerät wählen - OPF (Armed)","vehicles\showDialogOPF_Armed.sqf", nil, -1, true, true, "", "vehicle player == player"];
 player addAction ["Fluggerät wählen - IND","vehicles\showDialogIND.sqf", nil, -1, true, true, "", "vehicle player == player"];
 player addAction ["Mission: Transport","missions\evac\run.sqf", nil, 102, true, true, "", "vehicle player != player"];
 player addAction ["Mission: Bombrun","missions\laserTarget\run.sqf", [false], 101, true, true, "", "vehicle player != player"];

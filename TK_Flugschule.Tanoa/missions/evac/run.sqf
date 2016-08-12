@@ -28,7 +28,7 @@ while { !_found } do
 	// Nur auf dem Land sind die Punkte gültig
 	if (!(surfaceIsWater _position)) then
 	{
-		_position = _position findEmptyPosition [0, 100, "Land_MilOffices_V1_F"]; //Land_BC_Court_F Land_MilOffices_V1_F  Land_Radar_F  Land_TentHangar_V1_F  Land_i_Barracks_V1_F
+		_position = _position findEmptyPosition [0, 200, "B_T_VTOL_01_vehicle_F"]; //Land_BC_Court_F Land_MilOffices_V1_F  Land_Radar_F  Land_TentHangar_V1_F  Land_i_Barracks_V1_F
 		if (count _position > 0) then
 		{
 			_found = true;

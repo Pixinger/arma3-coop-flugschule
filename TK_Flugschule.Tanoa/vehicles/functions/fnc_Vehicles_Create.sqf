@@ -19,12 +19,14 @@ _vehicle setDir (getDir (_positions select _positionIndex));
 player moveInDriver _vehicle;
 player reveal _vehicle;
 player sidechat "Fahrzeug erstellt";
+player sidechat format["",getMass _vehicle,  ];
+
 
 // Automatischen enfernen des Heli's
 Sleep 5;
 [_vehicle] spawn {
 	private["_vehicle"];
 	_vehicle = _this select 0;
-	while { count (fullCrew _vehicle) > 0} do { Sleep 30;};
+	while { (count (fullCrew _vehicle) > 0) || (canMove _vehicle) } do { Sleep 5;};
 	deleteVehicle _vehicle;
 };
