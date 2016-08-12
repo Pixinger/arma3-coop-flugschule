@@ -19,7 +19,6 @@ _vehicle setDir (getDir (_positions select _positionIndex));
 player moveInDriver _vehicle;
 player reveal _vehicle;
 player sidechat "Fahrzeug erstellt";
-player sidechat format["",getMass _vehicle,  ];
 
 
 // Automatischen enfernen des Heli's
