@@ -26,6 +26,6 @@ Sleep 5;
 [_vehicle] spawn {
 	private["_vehicle"];
 	_vehicle = _this select 0;
-	while { (count (fullCrew _vehicle) > 0) || (canMove _vehicle) } do { Sleep 5;};
+	while { (count (fullCrew _vehicle) > 0) && (canMove _vehicle) } do { Sleep 5;};
 	deleteVehicle _vehicle;
 };
