@@ -27,5 +27,11 @@ Sleep 5;
 	private["_vehicle"];
 	_vehicle = _this select 0;
 	while { (count (fullCrew _vehicle) > 0) && (canMove _vehicle) } do { Sleep 5;};
-	deleteVehicle _vehicle;
+
+	// Krater löschen
+	private _craters = nearestObjects [getPos _vehicle, ["CraterLong"], 50];
+	{ deleteVehicle _x;	} foreach _craters;
+	
+	// Fahrzeug löschen
+	deleteVehicle _vehicle;	
 };

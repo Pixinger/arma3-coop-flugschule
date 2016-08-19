@@ -117,7 +117,7 @@ class Mission
 {
 	class Intel
 	{
-		briefingName="[TK]Flugschule v1.17";
+		briefingName="[TK]Flugschule v1.18";
 		overviewText="Fliegen lernen leicht gemacht";
 		startWeather=0.29999998;
 		startWind=0.099999994;
